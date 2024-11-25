@@ -1,9 +1,7 @@
 {
   "extends": [
     "config:base",
-    "docker:disable",
-    "platform:node",
-    "platform:node:nodeVersion:23"
+    "docker:disable"
   ],
   "constraintsFiltering": "strict",
   "pinVersions": false,
