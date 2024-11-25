@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "config:base",
+    "docker:disable",
+    "platform:node",
+    "platform:node:nodeVersion:23"
+  ],
+  "constraintsFiltering": "strict",
+  "pinVersions": false,
+  "rebaseStalePrs": true,
+  "schedule": [
+    "after 9am and before 3pm"
+  ],
+  "gitAuthor": "shaynlink",
+  "packageRules": [
+    {
+      "packagePatterns": [
+        "eslint",
+        "prettier"
+      ],
+      "enabled": false
+    },
+    {
+      "packagePatterns": [
+        "jest"
+      ],
+      "enabled": true,
+      "groupName": "jest"
+    }
+  ]
+}
