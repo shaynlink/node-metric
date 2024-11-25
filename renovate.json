@@ -4,7 +4,7 @@
   "pinVersions": false,
   "rebaseStalePrs": true,
   "schedule": ["after 9am and before 3pm"],
-  "gitAuthor": "shaynlink",
+  "gitAuthor": "Rayane Guemmoud <guemmoudrayane03@gmail.com>",
   "packageRules": [
     {
       "packagePatterns": ["eslint", "prettier"],
