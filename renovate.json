@@ -1,27 +1,17 @@
 {
-  "extends": [
-    "config:base",
-    "docker:disable"
-  ],
+  "extends": ["config:base", "docker:disable"],
   "constraintsFiltering": "strict",
   "pinVersions": false,
   "rebaseStalePrs": true,
-  "schedule": [
-    "after 9am and before 3pm"
-  ],
+  "schedule": ["after 9am and before 3pm"],
   "gitAuthor": "shaynlink",
   "packageRules": [
     {
-      "packagePatterns": [
-        "eslint",
-        "prettier"
-      ],
+      "packagePatterns": ["eslint", "prettier"],
       "enabled": false
     },
     {
-      "packagePatterns": [
-        "jest"
-      ],
+      "packagePatterns": ["jest"],
       "enabled": true,
       "groupName": "jest"
     }
